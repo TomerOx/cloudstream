@@ -64,7 +64,7 @@ android {
         versionName = "4.4.0"
 
         resValue("string", "app_version", "${defaultConfig.versionName}${versionNameSuffix ?: ""}")
-        resValue("string", "commit_hash", "git rev-parse --short HEAD".execute() ?: "")
+        // resValue("string", "commit_hash", "git rev-parse --short HEAD".execute() ?: "")
         resValue("bool", "is_prerelease", "false")
 
         // Reads local.properties
